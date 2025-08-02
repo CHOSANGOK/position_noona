@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin-bottom: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+
+.first > .main {
+  display: flex;
+  justify-content: space-between;
+}
+.first > .main :nth-child(2) {
+  display: flex;
+}
+.sub > .yellow {
+  margin-right: 10px;
+}
+
+.second {
+  margin-top: 50px;
+}
+.second > .main {
+  display: flex;
+  flex-direction: column;
+}
+.second > .main :nth-child(2) {
+  align-self: center;
+}
+.second > .main :nth-child(3) {
+  align-self: flex-end;
+}
+
+.third {
+  margin-top: 50px;
+}
+.third > .main {
+  display: flex;
+  justify-content: center;
+}
+.third > .main > .red {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.third > .main > .red > .yellow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fourth {
+  margin-top: 50px;
+}
+.fourth > .main {
+  display: flex;
+}
+.fourth > .main > .red {
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.fourth > .main > .red > .yellow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.fifth {
+  margin-top: 150px;
+}
+.fifth > .main {
+  display: flex;
+}
+.fifth > .main > .red {
+  display: flex;
+  position: relative;
+  width: 700px;
+  height: 300px;
+  justify-content: space-between;
+}
+.fifth > .main > .red > .yellow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+.fifth > .main > .red > .blue {
+  width: 200px;
+  height: 200px;
+}
