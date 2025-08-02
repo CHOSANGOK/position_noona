@@ -26,6 +26,7 @@ body {
 .first > .main {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .first > .main :nth-child(2) {
   display: flex;
@@ -36,6 +37,7 @@ body {
 
 .second {
   margin-top: 50px;
+  background-color: rgba(255, 180, 180, 0.3);
 }
 .second > .main {
   display: flex;
@@ -49,11 +51,14 @@ body {
 }
 
 .third {
+  background-color: rgba(180, 234, 255, 0.3);
+
   margin-top: 50px;
 }
 .third > .main {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 .third > .main > .red {
   display: flex;
@@ -69,6 +74,7 @@ body {
 }
 
 .fourth {
+  background-color: rgba(89, 255, 11, 0.3);
   margin-top: 50px;
 }
 .fourth > .main {
@@ -89,17 +95,23 @@ body {
 }
 
 .fifth {
+  position: relative;
   margin-top: 150px;
+  height: 600px;
+  background-color: rgba(255, 93, 220, 0.3);
 }
 .fifth > .main {
   display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 .fifth > .main > .red {
   display: flex;
   position: relative;
+  justify-content: space-between;
   width: 700px;
   height: 300px;
-  justify-content: space-between;
 }
 .fifth > .main > .red > .yellow {
   position: absolute;
